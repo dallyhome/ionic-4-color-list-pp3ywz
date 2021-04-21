@@ -1,0 +1,49 @@
+<ion-header>
+	<ion-toolbar color="primary">
+		<ion-title>
+			Color picker
+		</ion-title>
+
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+		<ion-item>
+			<ion-item slot="start">
+				<ion-label position="stacked">A Name</ion-label>
+				<ion-input autocapitalize="sentences" clearInput></ion-input>
+			</ion-item>
+			<ion-button slot="end" size="large" [color]="colorA.key" (click)="pickColorA($event, colorA)">
+				&#x22ee;
+			</ion-button>
+		</ion-item>
+
+		<ion-item>
+			<ion-item slot="start">
+				<ion-label position="stacked">B Name</ion-label>
+				<ion-input autocapitalize="sentences" clearInput></ion-input>
+			</ion-item>
+			<ion-button slot="end" size="large" [color]="colorB.key" (click)="pickColorB($event, colorB)">
+				&#x22ee;
+			</ion-button>
+		</ion-item>
+	</ion-list>
+
+	<ion-grid>
+		<ion-row align-content-center>
+			<ion-col size="2" align-self-baseline>
+				<ion-button expand="full" [color]="currentColor.key" (click)="pickColor($event, currentColor)">
+					&#x22ee;
+				</ion-button>
+			</ion-col>
+			<ion-col size="4" align-self-baseline>
+				<ion-item>
+					<ion-label position="floating">A Name</ion-label>
+					<ion-input clearInput></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

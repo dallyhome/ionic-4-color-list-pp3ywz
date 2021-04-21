@@ -1,0 +1,22 @@
+.myClass{
+  margin-top: 12px;
+  background-color: gray;
+  height: 32px;
+  color: white;
+  text-align: center;
+}
+
+.colClass{
+  border: 2px solid white;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  transition: opacity, border 0.5s;
+}
+
+.colClass:hover{
+  border: 1px solid black;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: opacity, border 0.5s;
+}
